@@ -1,0 +1,8 @@
+pergunta 1
+Resposta: 1.0.1, Correção de falha pequena = PATCH.
+pergunta 2
+Resposta: 1.1.0, Funcionalidade nova e compatível = MINOR.
+pergunta 3
+Resposta: 2.0.0, Quebra de compatibilidade = MAJOR.
+
+https://github.com/hcmwttm/cadastro-jogos

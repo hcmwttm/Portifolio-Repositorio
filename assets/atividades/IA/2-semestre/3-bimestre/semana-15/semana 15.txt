@@ -1,0 +1,22 @@
+Aula 1
+
+1. Como transformar a frustração do erro em um processo analítico de debugging?
+
+Em vez de ficar frustrado, é melhor tentar entender o que está causando o erro. Podemos analisar a mensagem, tentar reproduzir o problema e testar algumas soluções até descobrir a causa. Assim, o erro também serve como aprendizado.
+
+2. Como manter a calma pode ajudar a isolar o problema e atuar na causa raiz?
+
+Manter a calma ajuda a pensar melhor e não tomar decisões por impulso. Dessa forma, fica mais fácil analisar o código com atenção, testar diferentes possibilidades e descobrir a verdadeira causa do problema.
+
+
+Prezado, Carlos
+
+Comparei um sistema de triagem desenvolvido com regras em Python e outro baseado em Inteligencia Artificial.
+
+O sistema em Python funciona por palavras-chave, sendo mais direto. Por isso, nao conseguiu identificar corretamente a frase "Nao consigo puxar o ar e minha visao escureceu", pois seguiu apenas os termos presentes no codigo.
+
+Ja a IA classificou o caso como alta, conforme o roteiro, porque interpretou que "puxar o ar" indica dificuldade para respirar e que a visao escurecendo pode indicar um pre-desmaio. Mesmo entendendo melhor o contexto, a IA ainda pode cometer erros ou gerar informacoes incorretas.
+
+Atenciosamente,
+
+Ricardo.

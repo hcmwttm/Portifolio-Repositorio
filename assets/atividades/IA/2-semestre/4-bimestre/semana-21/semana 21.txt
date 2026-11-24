@@ -1,0 +1,73 @@
+Aula 2 
+Jornada do Cliente  
+
+Projeto: HelpLife
+
+1. Apresentação do produto/serviço
+
+O HelpLife é uma plataforma digital voltada à saúde mental, criada para facilitar o acesso a informações sobre saúde mental e transtornos mentais.
+
+a) Quais problemas o produto/serviço resolve?
+R- o helpLife ele facilita o acesso a informações sobre saúde mental, ajudando as pessoas a esclarecer dúvidas e encontrar conteúdos sobre transtornos mentais
+
+b) De que maneira o produto/serviço traz benefícios para o cliente?
+R- o helpLife oferece informações de forma simples e organizada, ajudando os usuários a compreender melhor a saúde mental e a encontrar conteúdos sobre o assunto
+
+c) O que faz o produto/serviço se destacar ou ser único?
+R- o nosso diferencial é reunir informações sobre saúde mental em uma plataforma digital de fácil acesso e navegação, contribuindo para a conscientização sobre o tema
+
+
+Pontos positivos                                                                                                                    * Proposta de conscientização sobre saúde mental.
+*Facilidade de acesso às informações disponíveis.
+*possibilidade de aprender mais sobre o tema.
+
+Pontos negativos:                                                                                                             Podem existir dificuldades para encontrar determinados conteúdos.                          A plataforma pode precisar de mais informações ou funcionalidades.
+
+
+ melhorias                                                                                                                             Adicionar mais conteúdos sobre saúde mental.
+*Melhorar a organização das informações, se necessário.
+*Utilizar fontes confiáveis e manter os conteúdos atualizados.
+*Considerar as opiniões dos usuários para futuras melhorias.
+
+————————————-
+AULA 3 
+Parte 1 — O agente monolítico (o problema)
+
+1.1 — Para cada problema listado, identifique qual limitação do modelo monolítico está presente. Como a colaboração entre múltiplos agentes resolveria o problema?
+R- O modelo monolítico tem dificuldades na revisão do próprio código, no excesso de informações, na execução sequencial e na identificação de erros, com múltiplos agentes, cada um realiza uma tarefa específica, melhorando a qualidade, a velocidade e a identificação de problemas
+
+1.2 — Por que a especialização de agentes tende a produzir resultados superiores à generalização em um único agente?
+R- porque cada agente é especializado em uma tarefa, como programar, testar ou revisar o código, com isso aumenta a qualidade, reduz erros e facilita a organização do trabalho
+
+Parte 2 — Projetando a colaboração entre agentes
+
+2.1 — Descreva o fluxo do DevPipeline, indicando a ordem de atuação dos agentes.
+Etapa 1: Agente de requisitos
+Etapa 2: Agente de desenvolvimento (código)
+Etapa 3: Agente de testes e revisão
+
+Etapa 4: Agente de deploy
+2.2 — Comunicação entre agentes (handoff)
+
+Agente: Requisitos
+Recebe: A solicitação do cliente.
+Produz: Os requisitos e as funcionalidades necessárias.
+Entrega para: O agente de desenvolvimento
+Agente: Desenvolvimento
+Recebe: Os requisitos do sistema
+Produz: O código-fonte da aplicação
+Entrega para: Os agentes de testes e documentação
+Agente: Testes e revisão
+Recebe: O código-fonte e os requisitos
+Produz: Testes automatizados e um relatório de erros
+Entrega para: O agente de desenvolvimento, caso existam erros, ou para o agente de deploy, se estiver aprovado
+Agente: Deploy
+Recebe: O código aprovado e os resultados dos testes
+Produz: A aplicação publicada.
+Entrega para: A equipe responsável pelo monitoramento e manutenção do sistema
+
+2.3 — Indique quais etapas poderiam acontecer ao mesmo tempo (em paralelo) e explique por quê?
+R- a documentação e os testes podem ser feitos ao mesmo tempo após a criação do código, pois são tarefas diferentes. Isso economiza tempo e torna o desenvolvimento mais rápido
+
+2.4 — Explique como o sistema pode identificar em qual etapa ocorreu um erro?
+R- o sistema pode registrar logs de cada agente, guardar os resultados de cada etapa e gerar relatórios de erros, assim, é possível identificar onde o problema aconteceu e corrigir a etapa responsável

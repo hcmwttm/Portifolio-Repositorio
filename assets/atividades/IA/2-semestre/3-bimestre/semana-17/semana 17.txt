@@ -1,0 +1,104 @@
+aula 1
+
+primeira parte
+
+1-se você simplesmente somar todos os
+
+números, o que pode acontecer?
+
+R- se eu somar todos os numeros, vai ficar um numero desproporcional
+
+2-Por que números maiores podem “pesar mais”
+
+na decisão?
+
+R-porque pode ter uma influençia maior na decisao
+
+3-Como seria possível ajustar esses valores para
+
+que a comparação fique mais justa?
+
+R- tentar ajustar os valores para a mesma escala evita que os numeros maiores influenciem
+
+4-Em que outras situações números em escalas
+
+diferentes podem atrapalhar uma análise?
+
+R- os numeros em escalas diferentes podem atrapalhar porque um valor mais alto pode acabar tendo mais infuençia
+
+segunda parte (slide 21,22 e 23)
+
+1.O que esse novo valor representa?
+
+R: Representa o índice de dedicação global do aluno (resultado: 240).
+
+2. Ele combina duas informações?
+
+R: Sim. Junta o esforço individual (horas_estudo) com a presença nas aulas (frequencia).
+
+3. É diferente de usar apenas horas_estudo sozinho?
+
+R: Sim. Evita tratar igualmente dois alunos com as mesmas horas de estudo, mas com frequências de aula diferentes.
+
+aula 2
+
+1. O valor de correlação está próximo de 1?
+
+   R: Sim. O valor é exatamente 1.0 (uma correlação perfeita positiva).
+
+2. O que isso indica?
+
+   R: Indica que as duas variáveis crescem de forma perfeitamente proporcional (a nota_anterior é sempre exatamente o dobro de horas_estudo).
+
+3. Essas duas variáveis carregam informação parecida?
+
+  R: Sim. Elas contêm praticamente a mesma informação (são redundantes), já que uma pode ser prevista com precisão total a partir da outra.
+
+
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
+
+# Configurar semente aleatória para reprodutibilidade
+np.random.seed(42)
+
+# Gerar base de dados simulada
+dados = pd.DataFrame({
+    "horas_estudo": np.random.randint(1, 6, 50),
+    "exercicios": np.random.randint(10, 100, 50),
+    "frequencia": np.random.randint(60, 100, 50),
+    "participacao": np.random.randint(1, 10, 50),
+})
+dados["nota_anterior"] = dados["horas_estudo"] * 1.5 + np.random.normal(0, 1, 50)
+
+print("--- ETAPA 1: Matriz de Correlação ---")
+matriz_corr = dados.corr()
+print(matriz_corr.round(3))
+
+print("\n--- ETAPA 2 e 3: Modificação de Features ---")
+# Criando a nova feature combinada de engajamento
+dados["engajamento_total"] = dados["frequencia"] + dados["participacao"]
+# Decisão de engenharia: Removendo 'nota_anterior' devido à alta colinearidade com 'horas_estudo'
+dados_filtrados = dados.drop(columns=["nota_anterior", "engajamento_total"]) 
+
+print("\n--- ETAPA 4: Aplicação de PCA ---")
+# O PCA exige dados padronizados (média 0, variância 1)
+features_originais = ["horas_estudo", "exercicios", "frequencia", "participacao", "nota_anterior"]
+X = dados[features_originais]
+
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+
+pca = PCA()
+X_pca = pca.fit_transform(X_scaled)
+
+# Exibir variância explicada
+for i, variancia in enumerate(pca.explained_variance_ratio_):
+    print(f"Componente Principal {i+1}: {variancia*100:.2f}% da variância explicada")
+print(f"Variância acumulada dos 2 primeiros componentes: {sum(pca.explained_variance_ratio_[:2])*100:.2f}%")
+
+Ao analisar os dados, vi que horas_estudo e nota_anterior têm uma correlação altíssima (acima de 0,90). Como elas trazem a mesma informação, removi a nota_anterior para evitar o overfitting e não bagunçar o modelo. Na sequência, criei a feature engajamento_total somando frequencia e participacao, unindo o comportamento do aluno em um único indicador prático.
+Antes de aplicar o PCA, padronizei os dados com StandardScaler para que variáveis com números grandes, como exercicios, não dominassem o cálculo. O PCA transformou tudo em eixos independentes, onde os dois primeiros componentes sozinhos já guardam 62,54% de toda a informação do dataset.

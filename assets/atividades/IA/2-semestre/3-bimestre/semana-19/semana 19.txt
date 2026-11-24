@@ -1,0 +1,31 @@
+aula 1
+Quando um sistema de inteligência artificial produz um
+resultado que causa dano, sobre quem recai a
+responsabilidade?
+R: Cai sobre o desenvolvedor, porque ele que tem a responsabilidade do monitoramento das interações do usuário. Porem o usuário deve verificar a procedência das informações. 
+
+De que forma o Art. 20 da LGPD poderia ser invocado
+neste contexto?
+R: O paciente poderia pedir a revisão da decisão automatizada e informações sobre os critérios usados pela IA.
+
+Caso o EU AI Act fosse aplicável, em qual categoria de
+risco este sistema se enquadraria? Quais obrigações
+decorreriam dessa classificação?
+R: O sistema seria de alto risco, exigindo supervisão humana, controle de riscos, qualidade dos dados, registros e segurança.
+
+aula 2
+Se o sistema toma decisões diferentes para perfis
+financeiros iguais com base no endereço do
+solicitante, isso é coincidência – ou o sistema
+aprendeu um padrão problemático dos dados?
+R: Não parece ser apenas coincidência. É um possível viés algorítmico em que a IA pode ter aprendido padrões problemáticos presentes nos dados, usando o endereço como um indicador indireto de características sociais ou econômicas.
+
+Que tipo de viés está presente neste sistema? Identifiquem a
+provável origem do viés e justifiquem.
+R: É um viés algorítmico/discriminatório, pois o sistema pode estar usando o CEP como indicador indireto da condição social do cliente.
+
+Este sistema seria classificado como alto risco pelo EU AI Act?
+R: Provavelmente veio dos dados históricos de 15 anos, que podem conter desigualdades já existentes. Sim, pelo EU AI Act, seria alto risco, pois sistemas usados para avaliar a capacidade de crédito estão no Anexo III.
+
+Quais obrigações regulatórias surgiriam dessa classificação?
+R:A empresa teria que garantir gestão de riscos, qualidade dos dados, transparência, registros, monitoramento e supervisão humana, além de corrigir possíveis riscos ou discriminações.

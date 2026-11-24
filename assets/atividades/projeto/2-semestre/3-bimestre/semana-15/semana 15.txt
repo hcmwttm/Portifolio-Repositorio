@@ -1,0 +1,104 @@
+Aula 1
+
+1. Como a equipe pode manter a motivação e a colaboração diante
+
+dos desafios enfrentados, utilizando a resiliência para superar as
+
+adversidades e manter o foco no objetivo comum?
+
+R: Celebrar pequenas vitórias diárias, manter a comunicação aberta para apoio mútuo, divisão de tarefas,  focar no objetivo final do projeto, mantendo o respeito e profissionalismo da equipe.
+
+2. De que forma o grupo pode transformar a frustração causada
+
+pelos erros e falhas em oportunidades de aprendizado e crescimento
+
+coletivo, aplicando a habilidade de resolução de problemas para
+
+melhorar o produto?
+
+R:Analisar os erros sem buscar culpados, identificar a causa raiz em equipe e aplicar a solução descoberta para melhorar o produto.
+efiwu
+
+Pendentes:
+
+apresentação
+
+Não iniciado ainda
+
+previsão 06/08
+
+os professores ainda não decidiram como será a apresentação
+
+APIs
+
+Projeto iniciado
+
+previsão 31/08
+
+a parte que esta responsavel pelas APIs ainda esta planejanto o bom funcionamento da idea
+
+Em andamento:
+
+videos dos psicologos
+
+pedido já feito
+
+previsão 06/08
+
+os videos ainda estão em processo de criação pela parte dos terceiros
+
+documentação
+
+Projeto iniciado
+
+previsão 31/08
+
+para a finalização da documentação é necessario:
+
+Links:
+
+Api
+
+Site oficial
+
+Prints do processo 
+
+Códigos;
+
+Html
+
+Css
+
+Java
+
+Drive
+
+Banco de dados
+
+Projeto em finalização
+
+Previsão 15/08
+
+falta apenas a integração ao codigo do JavaScript
+
+verificação das funcionalidades da aplicação
+
+Projeto iniciado
+
+previsão 31/08
+
+é necessario a finalização de todas as motificação para testar todas as funcionalidades
+
+Finalizados:
+
+design do site
+
+ja finalizado
+
+os design na questão de aparencia do site ja foram discutidas e finalizadas, as cores escolhidas foram pensadas e colocadas para agradar os usuarios, sendo um ambiente confortavel para todos
+
+design da logo marca
+
+ja finalizado
+
+procuramos fazer de um jeito que nossa logo seja simples de entender, que possui um jeito minimalista, usando as principais cores do site

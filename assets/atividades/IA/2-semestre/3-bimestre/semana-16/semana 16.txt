@@ -1,0 +1,44 @@
+aula 1-1
+1 Que tipos de dados você precisaria coletar para
+tomar essa decisão?
+
+R: Eu penso nas consequências de cada decisão que eu tomar.
+
+
+2 Por que organizar e limpar esses dados é
+importante antes de usá-los?
+
+
+R: Você pode analisar melhor os dados, sendo fácil de tomar decisões.
+
+3 Como você saberia se a conclusão que tirou está
+correta ou não?
+
+R: Eu analiso de como cheguei a essa conclusão, e questiono cada pensamento/ideia que tiver até o momento.
+
+aula 1-2
+
+1. Como você costuma agir quando trabalha em dupla e as tarefas são diferentes?
+
+R: tento dividir as tarefas por igual para não ficar trabalho a mais para uma pessoa só
+
+2. Por que dividir o trabalho de forma equilibrada é importante para o resultado?
+
+R: para um trabalho mais eficiente e equilibrado para todos os integrantes dos grupos 
+
+3. O que você faz quando percebe que seu colega está com mais dificuldades ou com mais tarefas?
+
+R: tento ajudar tirando as dificuldades ou fazendo alguma tarefa para ajudar 
+
+4. Que atitudes ajudam a integrar bem o trabalho de duas pessoas em um único resultado? 
+
+R: Uma boa comunicação entre o grupo e organização
+
+5. Como a colaboração pode melhorar a visão geral de um projeto do início ao fim?
+
+R: Unir ideias de todos, encontrar erros mais cedo e dividir melhor o trabalho do início ao fim
+
+aula 2
+1. O AgentContrata 3.0 é classificado como um sistema de alto risco pelo EU AI Act, pois é utilizado no recrutamento e seleção de candidatos, área prevista no Anexo III. Por isso, deve cumprir obrigações como realizar avaliação de conformidade antes do uso, manter documentação dos dados de treinamento, garantir supervisão humana e assegurar que o sistema seja preciso, não discriminatório e auditável.
+
+2. Não. O fato de o RH aprovar a decisão final não altera a classificação do sistema. O EU AI Act considera o uso pretendido e o impacto da IA sobre as pessoas. Como o AgentContrata 3.0 influencia quais candidatos avançam no processo seletivo, ele continua sendo classificado como um sistema de alto risco.

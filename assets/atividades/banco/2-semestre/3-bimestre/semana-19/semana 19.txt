@@ -1,0 +1,9 @@
+Parte 3
+
+1. Como garantir que a transação será revertida se houver um erro ao inserir dados na tabela Itens_Pedido?
+
+R: Podemos usar BEGIN para iniciar a transação e ROLLBACK caso ocorra algum erro. Assim, todas as alterações feitas durante a transação são desfeitas.
+
+2. Como a cláusula ROLLBACK pode ser usada para reverter transações parciais?
+
+R: O ROLLBACK desfaz todas as alterações realizadas durante uma transação que apresentou erro, evitando que apenas parte dos dados seja salva no banco.

@@ -1,0 +1,52 @@
+AULA 1   registro                                                                                                                                      Decomponha o problema do assistente da EstudaMais                                                           
+o assistente precisa responder dúvidas, recomendar materiais de estudo, criar exercícios para os alunos e mostrar o progresso de cada um
+                                                                                                                                                                                                      2. Defina os agentes especialistas do assistente
+Agente 1 – Nome: Tutor
+Responsabilidade principal: Responder às dúvidas dos alunos                                          Ferramentas que utiliza: Materiais dos cursos e banco de informações                  O que entrega como resultado: Respostas e explicações sobre os conteúdos
+                                                                                                                                              Agente 2 – Nome: Recomendador de Estudos
+Responsabilidade principal: Indicar os próximos materiais para estudar.
+Ferramentas que utiliza: Histórico e progresso do aluno.
+O que entrega como resultado: Sugestões de materiais de acordo com as necessidades do aluno
+                                                                                                                                                            Agente 3 – Nome: Agente de Exercícios e Progresso
+Responsabilidade principal: Criar exercícios e mostrar o progresso dos alunos.
+Ferramentas que utiliza: Banco de questões e sistema de notas.
+O que entrega como resultado
+                                                                                                                                                              3. Defina o agente orquestrador
+O agente orquestrador organiza o trabalho dos outros agentes,ele identifica o que o aluno precisa, encaminha a solicitação para o agente certo e junta as informações para dar uma resposta final
+                                                                                                                                                             4. Reflexão
+Não concordo totalmente, porque cada agente tem uma função diferente. Separar as tarefas ajuda a organizar o sistema e melhorar as respostas, juntar os agentes poderia simplificar o sistema, mas também poderia deixar as tarefas mais confusas
+
+Identifique os componentes da arquitetura 
+                                                                                                                                                          Interface: onde o aluno conversa com o assistente
+Agente orquestrador: organiza e encaminha as solicitações
+Agente de dúvidas: responde às perguntas dos alunos
+Agente de recomendação: indica materiais para estudar
+Agente de exercícios: cria exercícios para praticar
+Memória: guarda o histórico da conversa e os dados do aluno
+RAG: busca informações nos materiais dos cursos
+Base de vetores: armazena informações dos materiais para facilitar as buscas
+Ferramentas externas: consultam o progresso do aluno e o catálogo de cursos
+Resposta final: apresenta a resposta ao aluno                                                                       ALUNO
+  ↓
+INTERFACE (CHAT)
+  ↓
+AGENTE ORQUESTRADOR
+  ---MEMÓRIA
+  ↓
+AGENTE ESPECIALISTA ADEQUADO
+  ↓
+RAG (BUSCA NA BASE DE VETORES)
+  --FERRAMENTAS EXTERNAS
+  ↓
+AGENTE ORQUESTRADOR
+  ↓
+RESPOSTA FINAL
+  ↓
+ALUNO                                                                                                                                                                              Descreva o fluxo de dados
+O aluno envia uma dúvida pelo chat
+O agente orquestrador recebe a pergunta e encaminha para o agente de dúvidas
+A memória fornece o contexto da conversa, se necessário
+O agente de dúvidas utiliza o RAG para buscar informações nos materiais do curso armazenados na base de vetores
+O agente analisa as informações encontradas e prepara a resposta
+O orquestrador organiza a resposta final e a envia pela interface
+O aluno recebe a explicação pelo chat
